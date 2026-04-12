@@ -1,0 +1,84 @@
+const Hero = () => {
+  return (
+    <div>
+      <section className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top,rgba(147,84,49,0.18),transparent_38%),linear-gradient(180deg,#2b1d14_0%,#3a261c_100%)]">
+        <div className="absolute inset-0 opacity-30 [background-image:linear-gradient(rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.07)_1px,transparent_1px)] [background-size:56px_56px]">
+        </div>
+        <div className="relative mx-auto flex h-fit min-h-[92vh] max-w-7xl flex-col justify-between px-6 py-6 sm:px-10 lg:px-12">
+          <header className="flex items-center justify-between rounded-full border border-white/10 bg-white/10 px-5 py-3 text-white backdrop-blur-md">
+            <div>
+              <p className="text-xs uppercase tracking-[0.35em] text-amber-200/80">Doppio Coffee</p>
+            </div>
+            <div className="hidden items-center gap-2 sm:flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-star h-4 w-4 fill-amber-300 text-amber-300">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              <span className="text-sm text-white/85">4.9 loved by locals</span>
+            </div>
+          </header>
+          <div className="grid items-center gap-12 py-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+            <div className="max-w-2xl text-white">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-amber-100 backdrop-blur-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-coffee h-4 w-4">
+                  <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
+                  <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
+                  <line x1="6" x2="6" y1="2" y2="4" />
+                  <line x1="10" x2="10" y1="2" y2="4" />
+                  <line x1="14" x2="14" y1="2" y2="4" />
+                </svg>
+                Fresh espresso, pastries, and quiet corners
+              </div>
+              <h1 className="max-w-xl text-5xl font-semibold leading-tight tracking-tight sm:text-6xl lg:text-7xl">A warm place for coffee, conversation, and slow mornings.</h1>
+              <p className="mt-6 max-w-xl text-lg leading-8 text-stone-100/85 sm:text-xl">Doppio Coffee serves handcrafted espresso drinks, flaky pastries, and cozy vibes in the heart of the neighborhood.</p>
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <a href="#visit" className="inline-flex items-center justify-center gap-2 rounded-full bg-amber-300 px-6 py-3 font-medium text-[#2b1d14] transition hover:-translate-y-0.5 hover:bg-amber-200">
+                  Visit us today
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right h-4 w-4">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+                <a href="#menu" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/10 px-6 py-3 font-medium text-white backdrop-blur-md transition hover:bg-white/15">
+                  See the menu
+                </a>
+              </div>
+              <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                <div className="rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur-md">
+                  <p className="text-sm text-amber-100/75">Open Daily</p>
+                  <p className="mt-1 text-base font-medium text-white">7:00 AM – 8:00 PM</p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur-md">
+                  <p className="text-sm text-amber-100/75">House Favorite</p>
+                  <p className="mt-1 text-base font-medium text-white">Velvet doppio latte</p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur-md">
+                  <p className="text-sm text-amber-100/75">Find Us</p>
+                  <p className="mt-1 text-base font-medium text-white">Corner of Maple &amp; 3rd</p>
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="absolute -left-6 top-8 hidden h-28 w-28 rounded-full bg-amber-300/25 blur-3xl lg:block"></div>
+              <div className="absolute -right-6 bottom-8 hidden h-32 w-32 rounded-full bg-orange-200/30 blur-3xl lg:block"></div>
+              <div className="relative overflow-hidden rounded-[2rem] border border-white/20 bg-[#4a2f22] p-4 shadow-2xl shadow-black/20">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Coffee and pastry at Doppio Coffee" className="h-[520px] w-full rounded-[1.6rem] object-cover" />
+                <div className="absolute bottom-8 left-8 right-8 rounded-3xl border border-white/15 bg-[#2b1d14]/80 p-5 text-white backdrop-blur-md">
+                  <div className="flex items-center gap-2 text-sm text-amber-100/80">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-map-pin h-4 w-4">
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    125 Willow Street, Downtown
+                  </div>
+                  <p className="mt-2 text-xl font-medium">Come in for a quiet work session or your daily espresso ritual.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default Hero
