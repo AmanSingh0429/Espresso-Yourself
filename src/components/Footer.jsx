@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-[#2b1d14] text-white">
+    <footer className="bg-primary text-white">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:px-10 lg:px-12">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Section */}
@@ -101,7 +101,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="w-full rounded-full bg-amber-300 px-4 py-2.5 text-sm font-medium text-[#2b1d14] transition hover:bg-amber-200"
+                className="w-full rounded-full bg-amber-300 px-4 py-2.5 text-sm font-medium text-primary transition hover:bg-amber-200"
               >
                 Subscribe
               </button>

@@ -1,6 +1,6 @@
 const Visit = () => {
   return (
-    <section id="visit" className="bg-[#2b1d14] text-white">
+    <section id="visit" className="bg-primary text-white">
       <div className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12">
         <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr]">
           {/* Left Column - Info */}
@@ -83,7 +83,7 @@ const Visit = () => {
           {/* Right Column - Map & Social */}
           <div className="space-y-6">
             {/* Google Maps */}
-            <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-[#3a261c] shadow-2xl shadow-black/20">
+            <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-secondary shadow-2xl shadow-black/20">
               <div className="relative h-[300px] w-full">
                 <iframe
                   title="Doppio Coffee Location"
@@ -105,13 +105,13 @@ const Visit = () => {
             </div>
 
             {/* Stay Connected */}
-            <div className="rounded-[2rem] border border-white/10 bg-[#3a261c] p-6 shadow-2xl shadow-black/20">
+            <div className="rounded-[2rem] border border-white/10 bg-secondary p-6 shadow-2xl shadow-black/20">
               <div className="rounded-[1.5rem] bg-[linear-gradient(180deg,rgba(255,255,255,0.1),rgba(255,255,255,0.02))] p-6">
                 <p className="text-sm uppercase tracking-[0.3em] text-amber-200/80">Stay connected</p>
                 <h3 className="mt-3 text-2xl font-semibold">Follow the scent of fresh espresso.</h3>
                 <p className="mt-4 leading-7 text-white/75">Check out today's pastries, seasonal drinks, and cozy moments from the cafe.</p>
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                  <a href="https://instagram.com" className="inline-flex items-center justify-center gap-2 rounded-full bg-amber-300 px-5 py-3 font-medium text-[#2b1d14] transition hover:bg-amber-200">
+                  <a href="https://instagram.com" className="inline-flex items-center justify-center gap-2 rounded-full bg-amber-300 px-5 py-3 font-medium text-primary transition hover:bg-amber-200">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
                       <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />

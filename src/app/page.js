@@ -8,7 +8,7 @@ import Visit from "@/components/Visit"
 const page = () => {
   return (
     <div>
-      <main className="min-h-screen bg-[#f6efe6] text-[#2b1d14]">
+      <main className="min-h-screen bg-[#f6efe6] text-primary">
         <Hero />
         <About />
         <Menu />
