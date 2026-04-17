@@ -6,7 +6,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <div>
-              <p className="text-xs uppercase tracking-[0.35em] text-amber-200/80">Doppio Coffee</p>
+              <p className="text-xs uppercase tracking-[0.35em] text-amber-200/80">Cafe Coffee</p>
               <h3 className="mt-2 text-2xl font-semibold tracking-tight">Slow coffee,<br />warm moments.</h3>
             </div>
             <p className="text-sm leading-6 text-white/60">
@@ -113,7 +113,7 @@ const Footer = () => {
         <div className="mt-16 border-t border-white/10 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 text-center sm:flex-row">
             <p className="text-xs text-white/40">
-              © {new Date().getFullYear()} Doppio Coffee. All rights reserved.
+              © {new Date().getFullYear()} Cafe Coffee. All rights reserved.
             </p>
             <div className="flex gap-6 text-xs text-white/40">
               <a href="#" className="transition hover:text-white/60">Privacy Policy</a>

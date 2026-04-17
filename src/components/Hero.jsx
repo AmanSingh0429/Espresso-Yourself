@@ -2,6 +2,9 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Playwrite_NO } from 'next/font/google'
+
+const playwite = Playwrite_NO({ subsets: ['latin'] })
 
 const Hero = () => {
   const sectionRef = useRef(null)
@@ -138,8 +141,8 @@ const Hero = () => {
 
       if (imageRef.current) {
         gsap.to(imageRef.current, {
-          x: xPos * 0.5,
-          y: yPos * 0.5,
+          x: xPos * 1,
+          y: yPos * 1,
           duration: 1,
           ease: 'power2.out'
         })
@@ -173,7 +176,7 @@ const Hero = () => {
         <div className="relative mx-auto flex h-fit min-h-[92vh] max-w-7xl flex-col justify-between px-6 py-6 sm:px-10 lg:px-12">
           <header ref={headerRef} className="flex items-center justify-between rounded-full border border-white/10 bg-white/10 px-5 py-3 text-white backdrop-blur-md">
             <div>
-              <p className="text-xs uppercase tracking-[0.35em] text-amber-200/80">Doppio Coffee</p>
+              <p className="text-xs uppercase tracking-[0.35em] text-amber-200/80">Cafe Coffee</p>
             </div>
             <div className="hidden items-center gap-2 sm:flex">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-star h-4 w-4 fill-amber-300 text-amber-300">
@@ -195,9 +198,9 @@ const Hero = () => {
                 Fresh espresso, pastries, and quiet corners
               </div>
               <div ref={titleRef}>
-                <h1 className="max-w-xl text-5xl font-semibold leading-tight tracking-tight sm:text-6xl lg:text-7xl">A warm place for coffee, conversation, and slow mornings.</h1>
+                <h1 className={`max-w-xl text-4xl font leading-[1.1] tracking-tight sm:text-6xl lg:text-[3.5rem]`}>A warm place for <span className={` ${playwite.className} text-amber-200`}>coffee</span>, <span className={` ${playwite.className} text-amber-200 `}>conversation</span>, and  <span className={`${playwite.className} text-amber-200`}> slow mornings</span>.</h1>
               </div>
-              <p ref={descriptionRef} className="mt-6 max-w-xl text-lg leading-8 text-stone-100/85 sm:text-xl">Doppio Coffee serves handcrafted espresso drinks, flaky pastries, and cozy vibes in the heart of the neighborhood.</p>
+              <p ref={descriptionRef} className="mt-6 max-w-xl text-lg leading-8 text-stone-100/85 sm:text-xl">Cafe Coffee serves handcrafted espresso drinks, flaky pastries, and cozy vibes in the heart of the neighborhood.</p>
               <div ref={buttonsRef} className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
                   href="#visit"
@@ -228,7 +231,7 @@ const Hero = () => {
               <div ref={imageRef} className="relative overflow-hidden rounded-[2rem] border border-white/20 bg-[#4a2f22] p-4 shadow-2xl shadow-black/20">
                 <img
                   src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
-                  alt="Coffee and pastry at Doppio Coffee"
+                  alt="Coffee and pastry at Cafe Coffee"
                   className="h-[520px] w-full rounded-[1.6rem] object-cover transition-transform duration-700 hover:scale-105"
                 />
                 <div ref={imageCardRef} className="absolute bottom-8 left-8 right-8 rounded-3xl border border-white/15 bg-primary/80 p-5 text-white backdrop-blur-md">

@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Doppio Coffee",
+  title: "Cafe Coffee",
   description: "A place to get your caffeine fix.",
 };
 

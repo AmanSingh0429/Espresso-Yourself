@@ -3,6 +3,10 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Counter from '../utils/Counter'
+import { Playwrite_NO } from 'next/font/google'
+
+const playwite = Playwrite_NO({ subsets: ['latin'] })
 
 const About = () => {
   const sectionRef = useRef(null)
@@ -20,7 +24,7 @@ const About = () => {
         trigger: sectionRef.current,
         start: 'top 70%',
         end: 'bottom 20%',
-        toggleActions: 'play none none reverse',
+        // toggleActions: 'play none none reverse',
         // markers: true
       }
     })
@@ -66,7 +70,7 @@ const About = () => {
           ease: 'back.in',
           scrollTrigger: {
             trigger: cardsRef.current,
-            start: 'top 75%',
+            start: 'top 80%',
           }
         }
       );
@@ -121,23 +125,23 @@ const About = () => {
       {/* Main header section - larger */}
       <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:gap-16">
         <div>
-          <p ref={badgeRef} className="text-sm font-semibold uppercase tracking-[0.3em] text-[#9a5a33]">
+          <p ref={badgeRef} className="text-lg font-semibold uppercase tracking-[0.3em] text-[#9a5a33]">
             About us
           </p>
-          <h2 ref={titleRef} className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+          <h2 ref={titleRef} className="mt-4 text-4xl tracking-tight sm:text-5xl lg:text-6xl text-primary">
             Crafted coffee, friendly faces, and a space that feels like home.
           </h2>
         </div>
         <div ref={descriptionRef}>
-          <p className="text-xl leading-8 text-[#5f4636] sm:text-2xl sm:leading-10">
+          <p className="text-xl leading-8 text-[#5f4636] sm:text-xl">
             We source quality beans, pair them with fresh-baked pastries, and serve everything with calm,
-            thoughtful hospitality. Whether you need a quick pick-me-up or a place to linger, Doppio Coffee
+            thoughtful hospitality. Whether you need a quick pick-me-up or a place to linger, Cafe Coffee
             is designed to be your neighborhood favorite.
           </p>
           <div className="mt-6 flex items-center gap-4">
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent to-[#e6d6c5]"></div>
+            <div className="h-1 flex-1 bg-gradient-to-r from-transparent to-[#dd7f4d]"></div>
             <span className="text-sm text-[#9a5a33]">Est. 2017</span>
-            <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#e6d6c5]"></div>
+            <div className="h-1 flex-1 bg-gradient-to-l from-transparent to-[#dd7f4d]"></div>
           </div>
         </div>
       </div>
@@ -157,11 +161,11 @@ const About = () => {
                 <line x1="14" x2="14" y1="2" y2="4" />
               </svg>
             </div>
-            <h3 className="text-2xl font-semibold text-[#2b1d14]">Small-batch beans</h3>
-            <p className="mt-3 text-lg leading-7 text-[#6f5544]">
+            <h3 className={`text-2xl ${playwite.className} text-[#2b1d14]`}>Small-batch beans</h3>
+            <p className="mt-3 text-l leading-7 text-[#6f5544]">
               Rich, balanced espresso with seasonal rotations sourced directly from sustainable farms.
             </p>
-            <div className="mt-6 flex items-center gap-2 text-sm font-medium text-[#9a5a33] opacity-0 transition-opacity group-hover:opacity-100">
+            <div className="mt-6 flex items-center gap-2 text-sm font-medium text-[#9a5a33] group-hover:scale-110 group-hover:translate-x-6 transition-all duration-500">
               <span>Learn more</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12h14" />
@@ -182,11 +186,11 @@ const About = () => {
                 <path d="M16 10a4 4 0 0 1-8 0" />
               </svg>
             </div>
-            <h3 className="text-2xl font-semibold text-[#2b1d14]">Bakery fresh</h3>
-            <p className="mt-3 text-lg leading-7 text-[#6f5544]">
+            <h3 className={`text-2xl ${playwite.className} text-[#2b1d14]`}>Bakery fresh</h3>
+            <p className="mt-3 text-l leading-7 text-[#6f5544]">
               Croissants, muffins, and sweet treats made fresh daily by our in-house pastry chef.
             </p>
-            <div className="mt-6 flex items-center gap-2 text-sm font-medium text-[#9a5a33] opacity-0 transition-opacity group-hover:opacity-100">
+            <div className="mt-6 flex items-center gap-2 text-sm font-medium text-[#9a5a33] group-hover:scale-110 group-hover:translate-x-6 transition-all duration-500">
               <span>Learn more</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12h14" />
@@ -206,11 +210,11 @@ const About = () => {
                 <path d="M12 6v6l4 2" />
               </svg>
             </div>
-            <h3 className="text-2xl font-semibold text-[#2b1d14]">Cozy atmosphere</h3>
-            <p className="mt-3 text-lg leading-7 text-[#6f5544]">
+            <h3 className={`text-2xl ${playwite.className} text-[#2b1d14]`}>Cozy atmosphere</h3>
+            <p className="mt-3 text-l leading-7 text-[#6f5544]">
               Soft lighting, warm wood tones, comfortable seating, and quiet corners perfect for reading or working.
             </p>
-            <div className="mt-6 flex items-center gap-2 text-sm font-medium text-[#9a5a33] opacity-0 transition-opacity group-hover:opacity-100">
+            <div className="mt-6 flex items-center gap-2 text-sm font-medium text-[#9a5a33] group-hover:scale-110 group-hover:translate-x-6 transition-all duration-500">
               <span>Learn more</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12h14" />
@@ -224,19 +228,19 @@ const About = () => {
       {/* Additional stats section - makes it larger */}
       <div className="mt-16 grid gap-6 rounded-3xl bg-secondary p-8 sm:grid-cols-2 lg:grid-cols-4 lg:p-12">
         <div className="text-center">
-          <div className="text-4xl font-bold text-white">7+</div>
+          <div className="text-4xl font-bold text-white"><Counter target={7} /> +</div>
           <p className="mt-2 text-sm text-white">Years of Excellence</p>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold text-white">15k+</div>
+          <div className="text-4xl font-bold text-white"><Counter target={15} />k+</div>
           <p className="mt-2 text-sm text-white">Happy Customers</p>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold text-white">50+</div>
+          <div className="text-4xl font-bold text-white"><Counter target={50} />+</div>
           <p className="mt-2 text-sm text-white">Coffee Varieties</p>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold text-white">100%</div>
+          <div className="text-4xl font-bold text-white"><Counter target={100} />%</div>
           <p className="mt-2 text-sm text-white">Locally Sourced</p>
         </div>
       </div>
